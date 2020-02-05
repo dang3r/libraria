@@ -4,9 +4,10 @@ version = "0.1.0"
 description = "A library for searching libraries for books"
 authors = ["Daniel Cardoza <dan@danielcardoza.com>"]
 maintainers = ["Daniel Cardoza <dan@danielcardoza.com>"]
-repository = "git@github.com:dang3r/libraria.git"
+repository = "https://github.com/dang3r/libraria"
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/dang3r/libraria"
 
 [tool.poetry.scripts]
 libraria = "libraria.cli:cli"

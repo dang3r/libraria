@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 __version__ = '0.1.0'
 
 daiquiri.setup(level=logging.INFO)
-logger = daiquiri.getLogger(__name__) 
+logger = daiquiri.getLogger("libraria") 
 
 _dir = pathlib.Path(__file__).parent.absolute()
 cached_search_page = _dir / pathlib.Path("searchpage.html")
@@ -100,7 +100,7 @@ class SearchClient:
             return 
 
         text = b[0].text
-        m = re.match("^(\d+) to (\d+) of (.*) results$", text)
+        m = re.match(r"^(\d+) to (\d+) of (.*) results$", text)
         if not m:
             logger.warning(f"Unable to extract number of search results from {text}")
             return
