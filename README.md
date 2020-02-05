@@ -1,17 +1,22 @@
 # Libraria
 
+![Python package](https://github.com/dang3r/libraria/workflows/Python%20package/badge.svg)
+
 A python library used for searching libraries for books. Currently, only the San Francisco
 Bay Area libraries are supported.
 
-# Upcoming Features
+## Upcoming Features
 
 - More comprehensive tests
 - implement support for using [advanced search]("https://smplibrary.bibliocommons.com/search")
 
-### Installing
+## Installing
+
+`pip3 install libraria`
+
+## Usage
 
 ```
-pip3 install libraria
 libraria 'byzantine empire'
 S76C2550363,The Culture of the Byzantine Empire,BK,['9781508150015', '150815001X', '9781508150060', '1508150060']
 S76C1793574,The Byzantine Empire,BK,['9781410305862', '1410305864']
